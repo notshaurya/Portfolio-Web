@@ -43,7 +43,7 @@ header {
 .top-section h1 {
   margin: 0vh 7vh 5vh;
   font-size: 50px;
-  font-weight: 100;
+  font-weight: lighter;
   color: #2b9dff;
 }
 .top-section img {
