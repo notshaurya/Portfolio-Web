@@ -163,7 +163,20 @@ header {
   flex-direction: column;
 }
 .bottom-section .internal-div .project-links a {
-  font-size: 3rem;
+  font-size: 2rem;
+  color: rgb(35, 182, 150);
+}
+.bottom-section .internal-div .project-links a:link {
+  font-size: 2rem;
+  color: rgb(35, 182, 150);
+}
+.bottom-section .internal-div .project-links a:visited {
+  font-size: 2rem;
+  color: rgb(35, 182, 150);
+}
+.bottom-section .internal-div .project-links a:active {
+  font-size: 2rem;
+  color: rgb(35, 182, 150);
 }
 .bottom-section .internal-div .project-links a:hover {
   transform: scale(1.1);
@@ -199,6 +212,8 @@ footer a:hover {
   color: white;
   box-shadow: 5px 5px 10px #2b9dff;
 }
+
+
 
 @media all and (min-width: 1000px) {
   .top-section {
