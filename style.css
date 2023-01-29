@@ -16,7 +16,7 @@ html body {
   margin: auto;
 }
 body {
-  background-color: black;
+  background-color: #1b1b1b;
   align-items: center;
   justify-content: center;
   max-width: 1300px;
@@ -257,6 +257,9 @@ footer a:hover {
 }
 
 @media all and (min-width: 1000px) {
+  * {
+    overflow-x: hidden;
+  }
   .top-section {
     display: flex;
   }

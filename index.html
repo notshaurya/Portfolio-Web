@@ -29,7 +29,26 @@
         <h1>Hi. I am Full Stack Developer.</h1>
         <h6>
           Currently working as a Software Engineer at HighRadius Technologies,
-          having 1.5 yrs of experience.
+          having
+          <script>
+            var joiningDate = new Date("15 Jun 2021");
+            var currentDate = new Date();
+            var year = currentDate.getFullYear() - joiningDate.getFullYear();
+            var adder =
+              Math.abs(currentDate.getMonth() - joiningDate.getMonth()) + 2;
+            year = year + Math.floor(adder / 12);
+            var month = adder % 12;
+            var experience;
+            year = year == 1 ? year + " year" : year + " years";
+            month = month == 1 ? month + " month" : month + " months";
+            if (month == 0) {
+              experience = year;
+            } else {
+              experience = year + " and " + month;
+            }
+            document.write(experience);
+          </script>
+          of experience.
         </h6>
         <br />
         <h3>
@@ -54,7 +73,7 @@
       <a href="https://www.instagram.com/shaurya_toretto/?hl=en" class="insta"
         ><i class="fa fa-instagram"></i
       ></a>
-      <a href="https://wa.me/917260952326" class="wa"
+      <a href="https://wa.me/917979958525" class="wa"
         ><i class="fa fa-whatsapp"></i
       ></a>
       <a href="https://twitter.com/ShauryaToretto" class="twitter"
@@ -100,12 +119,16 @@
     </div>
 
     <footer>
-      <h4>© 2020 Shaurya Suman</h4>
+      <h4>
+        ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Shaurya Suman
+      </h4>
       <a href="mailto:impshaurya@gmail.com?Subject=We%20want%20to%20hire%20you!"
         >E-mail</a
       >
     </footer>
-
-    <script src="./script.js"></script>
   </body>
 </html>
