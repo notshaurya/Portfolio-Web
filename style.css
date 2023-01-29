@@ -257,9 +257,6 @@ footer a:hover {
 }
 
 @media all and (min-width: 1000px) {
-  * {
-    overflow-x: hidden;
-  }
   .top-section {
     display: flex;
   }
